@@ -20,3 +20,7 @@ func main(){
 	msg := <-messages
 	fmt.Println(msg)
 }
+
+
+// By defualt send and recieve blocks until sender and reciever are both ready hence we dont have to
+// use any other synchronizations
