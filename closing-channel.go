@@ -32,6 +32,7 @@ func main(){
 
 	fmt.Println("sent all jobs")
 
+	// keeping main alive until worker is scomplete - synchronization
 	<-done
 
 	_, ok := <-jobs
