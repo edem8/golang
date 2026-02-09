@@ -31,4 +31,8 @@ func main(){
 	}
 
 	wg.Wait()
+
+	// also note that this has no straight forward to propeagte error from workers
+	// for more advanceed use cases, cosndier the ERRGROUP PACKAGE
 }
+
